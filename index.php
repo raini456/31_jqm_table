@@ -35,14 +35,15 @@
                 <h1>Tabellen in JQM</h1>
             </div>
             <div data-role="content">
-                <table>
+                <table class="ui-responsive" data-mode="columntoggle" data-role="table">
                     <thead>
                         <tr>
-                            <th>Nr.</th>
+                            <!-- Prioritäten werden als Dropdown angezeigt, hier Name und Vorname aber obligatorisch -->
+                            <th data-priority="4">PersonalNr</th>
                             <th>Name</th>
-                            <th>Vorname</th>
-                            <th>PLZ</th>
-                            <th>Ort</th>  
+                            <th data-priority="1">Vorname</th>
+                            <th data-priority="3">PLZ</th>
+                            <th data-priority="2">Ort</th>  
                         </tr>
                     </thead>
                     <tbody>
@@ -50,6 +51,13 @@
                             <td>4</td>
                             <td>Schulz</td>
                             <td>Konrad</td>
+                            <td>10878</td>
+                            <td>Berlin</td>     
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Meier-Wittgenberg</td>
+                            <td>Andreas</td>
                             <td>10878</td>
                             <td>Berlin</td>     
                         </tr>
